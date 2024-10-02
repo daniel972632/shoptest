@@ -1,10 +1,10 @@
-package test;
+package test.service;
 
 import core.ConnectionPool;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-public class CustomerUpdateTest {
+public class CouponDeleteTest {
     public static void main(String[] args) {
         ConnectionPool cp = null;
         try {
@@ -14,24 +14,20 @@ public class CustomerUpdateTest {
             return;
         }
 
-        String sql = """
-            UPDATE customer
-            SET name = ?, email = ?, phone = ?, updated_at = NOW()
-            WHERE customer_id = ?
-            """;
+        String sql = "DELETE FROM coupon WHERE coupon_id = ?";
 
         try (Connection conn = cp.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
 
-            // 파라미터 설정
-            pstmt.setString(1, "새 이름");
-            pstmt.setString(2, "newemail@example.com");
-            pstmt.setString(3, "010-1234-5678");
-            pstmt.setString(4, "customer023");
+            pstmt.setInt(1, 34);  // 삭제할 쿠폰의 ID 설정
 
             // 쿼리 실행
-            int rowsUpdated = pstmt.executeUpdate();
-            System.out.println("Updated rows: " + rowsUpdated);
+            int rowsAffected = pstmt.executeUpdate();
+            if (rowsAffected > 0) {
+                System.out.println("쿠폰이 성공적으로 삭제되었습니다. 삭제된 행 수: " + rowsAffected);
+            } else {
+                System.out.println("삭제할 쿠폰이 존재하지 않습니다.");
+            }
         } catch (Exception e) {
             System.out.println("SQL execution error: " + e.getMessage());
         }

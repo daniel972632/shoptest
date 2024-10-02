@@ -1,10 +1,10 @@
-package test;
+package test.admin;
 
 import core.ConnectionPool;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-public class OrderUpdateStatusTest {
+public class ProductDeleteTest {
     public static void main(String[] args) {
         ConnectionPool cp = null;
         try {
@@ -15,16 +15,16 @@ public class OrderUpdateStatusTest {
         }
 
         try (Connection conn = cp.getConnection()) {
-            String sql = "UPDATE orders SET status = 'shipped', updated_at = NOW() WHERE order_id = ?";
+            String sql = "DELETE FROM product WHERE product_id = ?";
 
             try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
-                pstmt.setInt(1, 9); // 주문 ID를 9로 설정
-                int affectedRows = pstmt.executeUpdate(); // 쿼리 실행
+                pstmt.setInt(1, 11);  // 삭제할 product_id
 
+                int affectedRows = pstmt.executeUpdate();
                 if (affectedRows > 0) {
-                    System.out.println("주문 상태가 성공적으로 업데이트되었습니다.");
+                    System.out.println("상품 삭제 성공: " + affectedRows + "개의 행이 삭제되었습니다.");
                 } else {
-                    System.out.println("주문 ID가 9인 주문이 존재하지 않습니다.");
+                    System.out.println("상품 삭제 실패: 해당 상품이 존재하지 않습니다.");
                 }
             }
         } catch (Exception e) {

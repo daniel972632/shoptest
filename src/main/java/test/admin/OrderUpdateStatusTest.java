@@ -1,10 +1,10 @@
-package test;
+package test.admin;
 
 import core.ConnectionPool;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-public class OrderUpdateToCompletedTest {
+public class OrderUpdateStatusTest {
     public static void main(String[] args) {
         ConnectionPool cp = null;
         try {
@@ -15,16 +15,16 @@ public class OrderUpdateToCompletedTest {
         }
 
         try (Connection conn = cp.getConnection()) {
-            String sql = "UPDATE orders SET status = 'completed', created_at = NOW() WHERE order_id = ?";
+            String sql = "UPDATE orders SET status = 'shipped', updated_at = NOW() WHERE order_id = ?";
 
             try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
-                pstmt.setInt(1, 13);  // order_id를 13로 설정
+                pstmt.setInt(1, 9); // 주문 ID를 9로 설정
+                int affectedRows = pstmt.executeUpdate(); // 쿼리 실행
 
-                int affectedRows = pstmt.executeUpdate();
                 if (affectedRows > 0) {
-                    System.out.println("주문 상태 업데이트 성공: 주문 ID 13의 상태가 'completed'로 변경되었습니다.");
+                    System.out.println("주문 상태가 성공적으로 업데이트되었습니다.");
                 } else {
-                    System.out.println("주문 상태 업데이트 실패: 주문 ID 13이 존재하지 않습니다.");
+                    System.out.println("주문 ID가 9인 주문이 존재하지 않습니다.");
                 }
             }
         } catch (Exception e) {

@@ -1,9 +1,8 @@
-package test;
+package test.service;
 
 
 import core.ConnectionPool;
 import product.dto.Product;
-import product.dao.ProductDao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

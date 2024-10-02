@@ -1,10 +1,11 @@
-package test;
+package test.service;
 
 import core.ConnectionPool;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
-public class CouponDeleteTest {
+public class CartTotalPriceTest {
     public static void main(String[] args) {
         ConnectionPool cp = null;
         try {
@@ -14,19 +15,23 @@ public class CouponDeleteTest {
             return;
         }
 
-        String sql = "DELETE FROM coupon WHERE coupon_id = ?";
+        String sql = "SELECT SUM(c.total_price) AS total_cart_price FROM cart c WHERE c.customer_id = ?";
 
         try (Connection conn = cp.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
 
-            pstmt.setInt(1, 34);  // 삭제할 쿠폰의 ID 설정
+            // 파라미터 설정
+            pstmt.setString(1, "customer150");  // customer_id 설정
 
             // 쿼리 실행
-            int rowsAffected = pstmt.executeUpdate();
-            if (rowsAffected > 0) {
-                System.out.println("쿠폰이 성공적으로 삭제되었습니다. 삭제된 행 수: " + rowsAffected);
+            ResultSet rs = pstmt.executeQuery();
+
+            // 결과 처리
+            if (rs.next()) {
+                double totalCartPrice = rs.getDouble("total_cart_price");
+                System.out.println("고객 'customer150'의 총 장바구니 가격: " + totalCartPrice);
             } else {
-                System.out.println("삭제할 쿠폰이 존재하지 않습니다.");
+                System.out.println("고객 'customer150'의 장바구니에 항목이 없습니다.");
             }
         } catch (Exception e) {
             System.out.println("SQL execution error: " + e.getMessage());

@@ -1,4 +1,4 @@
-package test;
+package test.service;
 
 import core.ConnectionPool;
 import java.sql.Connection;

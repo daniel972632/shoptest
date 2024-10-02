@@ -1,10 +1,10 @@
-package test;
+package test.service;
 
 import core.ConnectionPool;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-public class CartUpdateTest_2 {
+public class AddressUpdateTest {
     public static void main(String[] args) {
         ConnectionPool cp = null;
         try {
@@ -15,29 +15,30 @@ public class CartUpdateTest_2 {
         }
 
         String sql = """
-            UPDATE cart
-            SET quantity = ?,
-                total_price = quantity * (SELECT price FROM product WHERE product_id = cart.product_id),
-                created_at = NOW()
-            WHERE cart_id = ? AND customer_id = ?
+            UPDATE address
+            SET name = ?, phone = ?, address1 = ?, is_default = ?
+            WHERE address_id = ? AND customer_id = ?
             """;
 
         try (Connection conn = cp.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
 
             // 파라미터 설정
-            pstmt.setInt(1, 5);  // 수량을 5로 설정
-            pstmt.setInt(2, 64);  // cart_id를 64로 설정
-            pstmt.setString(3, "customer999");  // customer_id 설정
+            pstmt.setString(1, "김철수");             // name
+            pstmt.setString(2, "010-9876-5432");      // phone
+            pstmt.setString(3, "서울시 강북구");       // address1
+            pstmt.setBoolean(4, false);                // is_default
+            pstmt.setInt(5, 293);                        // address_id
+            pstmt.setString(6, "user123");             // customer_id
 
             // 쿼리 실행
             int rowsAffected = pstmt.executeUpdate();
 
-            // 결과 처리
+            // 결과 출력
             if (rowsAffected > 0) {
-                System.out.println("장바구니 항목이 성공적으로 업데이트되었습니다.");
+                System.out.println("주소가 성공적으로 업데이트되었습니다.");
             } else {
-                System.out.println("장바구니 항목 업데이트에 실패했습니다. 항목을 찾을 수 없습니다.");
+                System.out.println("주소 업데이트에 실패했습니다.");
             }
         } catch (Exception e) {
             System.out.println("SQL execution error: " + e.getMessage());

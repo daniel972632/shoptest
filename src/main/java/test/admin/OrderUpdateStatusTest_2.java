@@ -1,10 +1,10 @@
-package test;
+package test.admin;
 
 import core.ConnectionPool;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-public class ProductUpdateTest {
+public class OrderUpdateStatusTest_2 {
     public static void main(String[] args) {
         ConnectionPool cp = null;
         try {
@@ -15,22 +15,16 @@ public class ProductUpdateTest {
         }
 
         try (Connection conn = cp.getConnection()) {
-            String sql = "UPDATE product " +
-                    "SET name = ?, price = ?, stock_quantity = ?, is_selling = ?, updated_at = NOW() " +
-                    "WHERE product_id = ?";
+            String sql = "UPDATE orders SET status = 'shipped', updated_at = NOW() WHERE order_id = ?";
 
             try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
-                pstmt.setString(1, "변경된 상품명");
-                pstmt.setInt(2, 12000);
-                pstmt.setInt(3, 40);
-                pstmt.setBoolean(4, true);
-                pstmt.setInt(5, 11);  // product_id가 11인 상품 업데이트
+                pstmt.setInt(1, 16);  // order_id를 1로 설정
 
                 int affectedRows = pstmt.executeUpdate();
                 if (affectedRows > 0) {
-                    System.out.println("상품 업데이트 성공: " + affectedRows + "개의 행이 업데이트되었습니다.");
+                    System.out.println("주문 상태 업데이트 성공: 주문 ID 1의 상태가 'shipped'로 변경되었습니다.");
                 } else {
-                    System.out.println("상품 업데이트 실패: 해당 상품이 존재하지 않습니다.");
+                    System.out.println("주문 상태 업데이트 실패: 주문 ID 1이 존재하지 않습니다.");
                 }
             }
         } catch (Exception e) {
