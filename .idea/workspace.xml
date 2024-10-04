@@ -4,8 +4,97 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a73a68a3-efdc-45cf-8dfc-751b651a38ee" name="변경" comment="변경">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a73a68a3-efdc-45cf-8dfc-751b651a38ee" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/ConnectionPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/MService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/dao/AddressDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/dao/CustomerDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/dto/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/dto/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/sql/SQL_Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/sql/SQL_Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/test/AddressDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/test/AddressInsert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/test/AddressSelectAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/test/AddressSelectOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/test/AddressUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/test/CustomerDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/test/CustomerInsert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/test/CustomerSelectAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/test/CustomerSelectOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/customer/test/CustomerUpdateRandom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/dao/OrderDetailDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/dao/OrdersDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/dto/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/dto/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/service/OrderDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/service/OrdersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/sql/SQL_Order_detail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/sql/SQL_Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/test/OrderDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/test/OrderDetailDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/test/OrderDetailInsert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/test/OrderDetailSelectAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/test/OrderDetailSelectOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/test/OrderDetailUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/test/OrderInsert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/test/OrderSelectAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/test/OrderSelectOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/order/test/OrderUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/product/dao/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/product/dto/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/product/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/product/sql/SQL_Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/product/test/ProductDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/product/test/ProductInsert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/product/test/ProductSelectAll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/product/test/ProductSelectOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/product/test/ProductUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/AddressInsertTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/AddressUpdateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CartDeleteTest_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CartSelectTest_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CartTotalPriceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CartUpdateTest_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CouponDeleteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CouponInsertTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CouponSelectActiveTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CouponUpdateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CustomerCouponBoxSelectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CustomerOrderDetailSelectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CustomerOrderSelectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CustomerPasswordUpdateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CustomerSelectByIdTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CustomerSelectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/CustomerUpdateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/OrderSalesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/OrderSelectRecentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/OrderUpdateStatusTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/OrderUpdateStatusTest_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/OrderUpdateToCompletedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/ProductDeleteTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/ProductInsertTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/ProductSelectAllTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/ProductSelectByIdTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/ProductSelectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/ProductSelectTest_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/ProductUpdateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/test/ReviewSelectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mysql.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,25 +115,8 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="admin" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "daniel972632"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/daniel972632/shoptest.git",
-    "accountId": "1711a06e-4543-4552-851f-d377dc2598cb"
-  }
-}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -55,83 +127,83 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.ecommerce_workshop [:customer.test.AddressDelete.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:customer.test.AddressInsert.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:customer.test.AddressSelectAll.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:customer.test.AddressSelectOne.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:customer.test.AddressUpdate.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:customer.test.CustomerDelete.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:customer.test.CustomerInsert.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:customer.test.CustomerSelectAll.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:customer.test.CustomerSelectOne.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:customer.test.CustomerUpdateRandom.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:edu_sm.Main.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:order.test.OrderDelete.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:order.test.OrderDetailDelete.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:order.test.OrderDetailInsert.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:order.test.OrderDetailSelectAll.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:order.test.OrderDetailSelectOne.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:order.test.OrderDetailUpdate.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:order.test.OrderSelectAll.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:order.test.OrderUpdate.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:product.test.ProductDelete.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:product.test.ProductInsert.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:product.test.ProductSelectAll.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:product.test.ProductSelectOne.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:product.test.ProductUpdate.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.AddressInsertTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.AddressUpdateTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CartDeleteTest_2.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CartSelectTest_2.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CartTotalPriceTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CartUpdateTest_2.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CouponDeleteTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CouponInsertTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CouponSelectActiveTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CouponUpdateTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CustomerCouponBoxSelectTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CustomerOrderDetailSelectTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CustomerOrderSelectTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CustomerPasswordUpdateTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CustomerSelectByIdTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CustomerSelectTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.CustomerUpdateTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.OrderSalesTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.OrderSelectRecentTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.OrderUpdateStatusTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.OrderUpdateStatusTest_2.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.OrderUpdateToCompletedTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.ProductDeleteTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.ProductInsertTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.ProductSelectAllTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.ProductSelectByIdTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.ProductSelectTest_1.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.ProductUpdateTest.main()].executor": "Run",
-    "Gradle.ecommerce_workshop [:test.ReviewSelectTest.main()].executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "service",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/springsm",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/ecommerce_workshop/src/main/java/edu_sm/Main.java",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.ecommerce_workshop [:customer.test.AddressDelete.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:customer.test.AddressInsert.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:customer.test.AddressSelectAll.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:customer.test.AddressSelectOne.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:customer.test.AddressUpdate.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:customer.test.CustomerDelete.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:customer.test.CustomerInsert.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:customer.test.CustomerSelectAll.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:customer.test.CustomerSelectOne.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:customer.test.CustomerUpdateRandom.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:edu_sm.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:order.test.OrderDelete.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:order.test.OrderDetailDelete.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:order.test.OrderDetailInsert.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:order.test.OrderDetailSelectAll.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:order.test.OrderDetailSelectOne.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:order.test.OrderDetailUpdate.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:order.test.OrderSelectAll.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:order.test.OrderUpdate.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:product.test.ProductDelete.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:product.test.ProductInsert.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:product.test.ProductSelectAll.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:product.test.ProductSelectOne.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:product.test.ProductUpdate.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.AddressInsertTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.AddressUpdateTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CartDeleteTest_2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CartSelectTest_2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CartTotalPriceTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CartUpdateTest_2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CouponDeleteTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CouponInsertTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CouponSelectActiveTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CouponUpdateTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CustomerCouponBoxSelectTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CustomerOrderDetailSelectTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CustomerOrderSelectTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CustomerPasswordUpdateTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CustomerSelectByIdTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CustomerSelectTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.CustomerUpdateTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.OrderSalesTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.OrderSelectRecentTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.OrderUpdateStatusTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.OrderUpdateStatusTest_2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.OrderUpdateToCompletedTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.ProductDeleteTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.ProductInsertTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.ProductSelectAllTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.ProductSelectByIdTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.ProductSelectTest_1.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.ProductUpdateTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ecommerce_workshop [:test.ReviewSelectTest.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/springsm&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/ecommerce_workshop/src/main/java/edu_sm/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\ecommerce_workshop\src\main\java" />
@@ -154,6 +226,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.OrderDetailInsert" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -178,24 +255,10 @@
       <workItem from="1727678878929" duration="5507000" />
       <workItem from="1727836311080" duration="88000" />
       <workItem from="1727836406456" duration="44000" />
-      <workItem from="1727857185243" duration="1112000" />
     </task>
-    <task id="LOCAL-00001" summary="변경">
-      <option name="closed" value="true" />
-      <created>1727856923953</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1727856923953</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="변경" />
   </component>
 </project>
